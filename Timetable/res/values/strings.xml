@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Register/Sign in start -->
+    <string name="app_name">Timetable</string>
+    <string name="action_settings">Settings</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="firstname_hint">First Name</string>
+    <string name="lastname_hint">Last Name</string>
+    <string name="gender_hint">M/F?</string>
+    <string name="university_hint">College / University</string>
+    <string name="signin_text">Sign In</string>
+    <string name="signup_text">Sign Up</string>
+    <string name="fbconnect_text">FB Connect</string>
+    <string name="register_text">Don\'t have an account?</string>
+    <string name="forget_password_text">I forget my password</string>
+    <string name="alreadyRegistered_text">Already have an account?</string>
+    <string name="session">session_info</string>
+    <!-- Register/Sign in end -->
+
+
+    <!-- Drawer start -->
+    <string name="app_logo">Logo</string>
+    <string name="action_addtask">Add task</string>
+    <string name="drawer_open">Open Navigation Drawer</string>
+    <string name="drawer_close">Close Navigation Drawer</string>
+    <string name="navigation_text">Navigation</string>
+
+    <string-array name="navigation_drawer_items">
+        <item>HOME</item>
+        <item>PLANNER</item>
+        <item>NOTIFICATIONS</item>
+        <item>CHAT</item>
+        <item>FRIENDS</item>
+        <item>PROFILE</item>
+        <item>SETTINGS</item>
+        <item>LOGOUT</item>
+    </string-array>
+    <!-- Drawer end -->
+
+
+    <!-- Planner start -->
+    <string name="course_title">Course</string>
+    <string name="add_course">Add a new course</string>
+    <string name="current_semester">Current Semester</string>
+    <string name="start_date">Start Date: </string>
+    <string name="end_date">End Date: </string>
+    <string name="unknown_date">dd/MM/yyyy</string>
+    <!-- Planner end -->
+
+
+    <!-- Course View start -->
+    <string name="course_view_action_bar_title">Course View</string>
+    <string name="latest_updates_title">Latest Updates</string>
+    <string name="view_all_updates_text">View all updates</string>
+    <string name="lecture_list_title">Lectures</string>
+    <string name="add_post">Compose post</string>
+    <string name="no_post_text">No post yet, click to be the first one!</string>
+    <string name="like_button_text">Like</string>
+    <string name="comment_button_text">Comment</string>
+    <string name="quit_course">Quit this course</string>
+    <string name="compose_post_title">Write your post</string>
+    <string name="compose_post_button_text">Post it!</string>
+    <string name="compose_post_menu_item_text">Compose Post</string>
+    <string name="add_task_menu_item_text">Add Task</string>
+    <string name="add_exam_menu_item_text">Add Exam</string>
+    <!-- Home Course View end -->
+
+
+    <!-- Comment View start -->
+    <string name="comment_content_hint">Write a comment</string>
+    <string name="comment_view_action_bar_title">Comments</string>
+    <!-- Comment View end -->
+
+
+    <!-- Add Course View start -->
+    <string name="lectures">Lectures</string>
+    <string name="tutorials">Tutorials</string>
+    <string name="tests_exams">Tests &amp; Exams</string>
+    <string name="course_code">Course Code</string>
+    <string name="instructor_name">Instructor</string>
+    <string name="course_code_hint">e.g. 15213</string>
+    <string name="action_done">Done</string>
+    <string name="course_name_tag">Course Name</string>
+    <!-- Add Course View end -->
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="app_id">755291211163639</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_addcourse">Course</string>
+    <string name="title_activity_course_view">CourseViewActivity</string>
+    <string name="post_title">Posts</string>
+    <string name="title_activity_comment_view">CommentViewActivity</string>
+    <string name="title_activity_course_updates">CourseUpdatesActivity</string>
+
+    <!-- Add/Edit Task View start -->
+    <string name="addedit_task_time_tag">Time</string>
+    <string name="addedit_task_date_tag">Date</string>
+    <string name="addedit_task_dash"> - </string>
+    <string name="addedit_task_time_hint">HH:mm</string>
+    <string name="addedit_task_date_hint">yyyy-MM-dd</string>
+    <string name="addedit_task_note_hint">E.g. On page 40</string>
+    <string name="addedit_task_location_hint">E.g. GHC5406</string>
+    <!-- Add/Edit Task View end -->
+
+
+    <!-- Notifications View start -->
+    <string name="confirm_text">Confirm</string>
+    <string name="decline_text">Decline</string>
+    <string name="clear_all">Clear All</string>
+    <!-- Notifications View end -->
+
+
+    <!-- Profile fragment start -->
+    <string name="profile_load_more">Load more</string>
+    <!-- Profile fragment end -->
+
+
+    <!-- Edit Profile start -->
+    <string name="upadte_info">Update Info</string>
+    <string name="edit_profile_school">School:</string>
+    <string name="edit_profile_old_pwd">Old Password:</string>
+    <string name="edit_profile_optinal">(Optional)</string>
+    <string name="edit_profile_new_pwd">New Password:</string>
+    <string name="edit_profile_last_name">Last name:</string>
+    <string name="edit_profile_first_name">First name:</string>
+    <string name="edit_profile_avartar">Avartar</string>
+    <!-- Edit Profile end -->
+
+
+    <!-- Forget Password start -->
+    <string name="forget_password_username">Username/Email:</string>
+    <string name="forget_password_hint">Enter your username</string>
+    <string name="forget_password_reover">Recover</string>
+    <string name="forget_password_notification">A new password has been sent to your email account. 
+        Please check your email. \n\nIf you don\&apos;t receive this email, please click \&apos;Recover 
+        Password\&apos; button again</string>
+    <!-- Forget Password end -->
+
+
+    <!-- Preference start -->
+    <string name="preference_notification_setting">GENERAL</string>
+    <string name="preference_background_notification">Background Notification</string>
+    <string name="preference_check_interval">Notification Check Interval</string>
+    <string name="preference_sound">Sound</string>
+    <string name="preference_vibration">Vibration</string>
+    <string name="preference_about">ABOUT</string>
+    <string name="preference_about_summary">Release Date: 01/12/2013</string>
+    <string name="preference_app_name">Timetable v1.0</string>
+    <string name="preference_logout">Logout</string>
+    <!-- Preference end -->
+
+
+    <!-- Chat Fragment start -->
+    <string name="feature_comming_soon">This feature is coming soon</string>
+    <!-- Chat Fragment end -->
+
+</resources>

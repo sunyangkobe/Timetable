@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/postViewRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp" >
+    
+    <edu.cmu.cs.vlis.timetable.customView.RoundedImageView  
+        android:id="@+id/posterProfileImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+    
+    <TextView 
+        android:id="@+id/posterNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/posterProfileImageView"
+        android:layout_marginLeft="10dp"
+        android:textSize="13sp"
+        android:textStyle="bold"/>
+
+    <TextView 
+        android:id="@+id/postContentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/posterNameTextView"
+        android:layout_below="@id/posterNameTextView"
+        android:layout_marginTop="4dp"
+        android:textSize="13sp"/>
+        
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/clearAllNotification"
+        android:showAsAction="ifRoom"
+        android:title="@string/clear_all"/>
+
+</menu>

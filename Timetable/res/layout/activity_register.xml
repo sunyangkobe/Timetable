@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background_color"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".RegisterActivity" >
+
+    <TextView
+        android:id="@+id/logoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35sp"
+        android:text="@string/app_logo"
+        android:textSize="40sp" />
+
+    <EditText
+        android:id="@+id/firstNameEditText"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/logoTextView"
+        android:layout_marginLeft="35sp"
+        android:layout_marginTop="45sp"
+        android:background="@drawable/rect_text_edit"
+        android:hint="@string/firstname_hint"
+        android:inputType="textPersonName"
+        android:padding="5sp"
+        android:textColor="@color/black"
+        android:textSize="15sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/lastNameEditText"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/logoTextView"
+        android:layout_marginRight="35sp"
+        android:layout_marginTop="45sp"
+        android:background="@drawable/rect_text_edit"
+        android:hint="@string/lastname_hint"
+        android:inputType="textPersonName"
+        android:padding="5sp"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/registerEmailEditText"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/firstNameEditText"
+        android:layout_below="@+id/firstNameEditText"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/rect_text_edit"
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress"
+        android:padding="5sp"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/genderEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/lastNameEditText"
+        android:layout_below="@+id/lastNameEditText"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/rect_text_edit"
+        android:hint="@string/gender_hint"
+        android:inputType="textPersonName"
+        android:padding="5sp"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/univNameAutoComplete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/registerEmailEditText"
+        android:layout_alignRight="@+id/genderEditText"
+        android:layout_below="@+id/genderEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/rect_text_edit"
+        android:hint="@string/university_hint"
+        android:padding="5sp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/registerPasswordEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/univNameAutoComplete"
+        android:layout_alignRight="@+id/univNameAutoComplete"
+        android:layout_below="@+id/univNameAutoComplete"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/rect_text_edit"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:padding="5sp"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="120sp"
+        android:layout_height="35sp"
+        android:layout_below="@+id/registerPasswordEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9sp"
+        android:background="@drawable/custom_signin_button"
+        android:onClick="clickSignUp"
+        android:text="@string/signup_text"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/alreadyRegisteredTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signUpButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:onClick="clickAlreadyRegistered"
+        android:text="@string/alreadyRegistered_text"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical" >
+ 
+    <RelativeLayout 
+        android:id="@+id/homeTodayLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <ProgressBar
+            android:id="@+id/progressIndicator"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/progress_spinner" >
+        </ProgressBar>
+        
+        <LinearLayout
+	        android:id="@+id/mainContent"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="16dp"
+	        android:paddingRight="16dp"
+	        android:paddingTop="8dp"
+	        android:orientation="vertical"
+	        android:visibility="gone" >
+        
+	       <LinearLayout
+	           android:id="@+id/timeAndTemperatureLayout"
+	           android:layout_width="fill_parent"
+	           android:layout_height="wrap_content"
+	           android:orientation="horizontal" >
+	           
+	           <edu.cmu.cs.vlis.timetable.customView.CustomDigitalClock 
+	               android:id="@+id/currentTimeCustomDigitalClock"
+	               android:layout_width="0dp"
+	               android:layout_height="wrap_content"
+	               android:textSize="50sp"
+	               android:gravity="right"
+	               android:layout_gravity="center"
+	               android:layout_weight="1" 
+	               android:paddingRight="5dp" />
+	           
+	           <LinearLayout
+	               android:id="@+id/dateAndTemperatureLayout"
+	               android:layout_width="0dp"
+	               android:layout_height="fill_parent"
+	               android:orientation="vertical"
+	               android:layout_weight="1"
+	               android:paddingLeft="5dp"
+	               android:paddingTop="10dp" > 
+	               
+	               <TextView 
+	                   android:id="@+id/currentDateTextView"
+	                   android:layout_width="fill_parent"
+	                   android:layout_height="0dp"
+	                   android:gravity="left"
+	                   android:textSize="15sp"
+	                   android:layout_weight="1" />
+	               
+	               <TextView 
+	                   android:id="@+id/currentTemperatureTextView"
+	                   android:layout_width="fill_parent"
+	                   android:layout_height="0dp"
+	                   android:gravity="left"
+	                   android:textSize="15sp"
+	                   android:layout_weight="1" />       
+	           </LinearLayout>   
+	       </LinearLayout>
+	       
+	       <TextView 
+	           android:id="@+id/remainingTaskCountTextView"
+	           android:layout_width="fill_parent"
+	           android:layout_height="wrap_content"
+	           android:textSize="12sp" 
+	           android:gravity="center"
+	           android:layout_marginTop="1dp"/>
+	       
+	       <LinearLayout
+	           android:id="@+id/tasksLinearLayout"
+	           android:layout_width="fill_parent"
+	           android:layout_height="wrap_content"
+	           android:layout_marginTop="10dp"
+	           android:orientation="vertical" >
+	       </LinearLayout>
+	       
+	       <TextView 
+	           android:id="@+id/nextLectureTimeTextView"
+	           android:layout_width="fill_parent"
+	           android:layout_height="wrap_content"
+	           android:textSize="13sp" 
+	           android:gravity="left"
+	           android:layout_marginTop="7dp"/>
+	       
+	       <LinearLayout
+	           android:id="@+id/lecturesLinearLayout"
+	           android:layout_width="fill_parent"
+	           android:layout_height="wrap_content"
+	           android:layout_marginTop="10dp"
+	           android:orientation="vertical" >
+	       </LinearLayout>
+       
+        </LinearLayout>
+        
+    </RelativeLayout>
+  
+</ScrollView> 

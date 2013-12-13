@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/friendItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="10dp"
+    android:background="@color/more_light_gray" >
+    
+    <edu.cmu.cs.vlis.timetable.customView.RoundedImageView  
+        android:id="@+id/friendProfileImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+    
+    <TextView
+        android:id="@+id/fullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/friendProfileImage"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:textStyle="bold"
+        android:textSize="13sp"/>
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout 
+        android:id="@+id/courseViewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <ProgressBar
+            android:id="@+id/progressIndicator"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/progress_spinner" >
+        </ProgressBar>
+                
+	    <LinearLayout
+	        android:id="@+id/mainContent"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:padding="15dp" >
+	
+	        <TextView
+	            android:id="@+id/latestUpdatesTitle"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:text="@string/latest_updates_title"
+	            android:textAppearance="?android:attr/textAppearanceLarge"
+	            android:textColor="@color/dark_green" />
+	
+	        <LinearLayout
+	            android:id="@+id/latestUpdatesContentLinearLayout"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="15dp"
+	            android:orientation="vertical" >
+	        </LinearLayout>
+	
+	        <TextView
+	            android:id="@+id/viewAllUpdatesTextView"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="15dp"
+	            android:background="@color/more_light_gray"
+	            android:gravity="center"
+	            android:paddingBottom="3dp"
+	            android:paddingTop="3dp"
+	            android:text="@string/view_all_updates_text"
+	            android:textColor="@color/light_green"
+	            android:textSize="15sp"
+	            android:visibility="gone" />
+	
+	        <TextView
+	            android:id="@+id/upcomingTasksTitle"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="25dp"
+	            android:gravity="left"
+	            android:textAppearance="?android:attr/textAppearanceLarge"
+	            android:textColor="@color/dark_green" />
+	
+	        <LinearLayout
+	            android:id="@+id/upcomingTasksContentLinearLayout"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:orientation="vertical" >
+	        </LinearLayout>
+	
+	        <TextView
+	            android:id="@+id/lecturesTitle"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:gravity="left"
+	            android:text="@string/lecture_list_title"
+	            android:textAppearance="?android:attr/textAppearanceLarge"
+	            android:textColor="@color/dark_green" />
+	
+	        <LinearLayout
+	            android:id="@+id/lecturesContentLinearLayout"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:orientation="vertical" >
+	        </LinearLayout>
+	
+	        <Button
+	            android:id="@+id/quit_course_btn"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="15dp"
+	            android:background="@drawable/delete_button"
+	            android:text="@string/quit_course"
+	            android:textColor="@color/white" />
+	    </LinearLayout>        
+        
+    </RelativeLayout>    
+
+</ScrollView>

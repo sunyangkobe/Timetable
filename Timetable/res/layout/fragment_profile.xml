@@ -1,0 +1,161 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/profileFragmentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ProgressBar
+            android:id="@+id/progressIndicator"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/progress_spinner" >
+        </ProgressBar>
+
+        <RelativeLayout
+            android:id="@+id/mainContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp" >
+
+            <RelativeLayout 
+                android:id="@+id/top_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                
+	            <edu.cmu.cs.vlis.timetable.customView.RoundedImageView  
+	                android:id="@+id/user_profile_image"
+	                android:layout_width="70dp"
+	                android:layout_height="70dp"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentTop="true" /> 
+	                           
+	            <Button
+	                android:id="@+id/profile_friend_or_edit_button"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentRight="true"
+	                android:layout_alignParentTop="true"
+	                android:layout_marginTop="9sp"
+	                android:background="@drawable/custom_signin_button"
+	                android:minHeight="0dp"
+	                android:padding="10dp"
+	                android:textColor="@color/white"
+	                android:textSize="13sp"
+	                android:textStyle="bold" 
+	                android:visibility="gone"/>
+	            
+	            <TableLayout
+	                android:id="@+id/profile_user_info_container"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentTop="true"
+	                android:layout_toRightOf="@id/user_profile_image" 
+	                android:layout_toLeftOf="@id/profile_friend_or_edit_button"
+	                android:layout_marginLeft="10dp"
+	                android:layout_marginRight="10dp" >
+	
+	                <TableRow
+	                    android:id="@+id/tableRow1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" >
+	
+	                    <TextView
+	                        android:id="@+id/profile_user_name"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginRight="30dp"
+	                        android:textStyle="bold"
+	                        android:textSize="17sp" />
+	                </TableRow>
+	
+	                <TableRow
+	                    android:id="@+id/tableRow2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="1dp" >
+	
+	                    <TextView
+	                        android:id="@+id/profile_user_school"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginRight="30dp" 
+	                        android:textSize="10dp"/>
+	                </TableRow>
+	
+	                <TableRow
+	                    android:id="@+id/tableRow3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_marginTop="4dp">
+	
+	                    <TextView
+	                        android:id="@+id/profile_user_status"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginRight="30dp"
+	                        android:textStyle="italic" 
+	                        android:textSize="14sp"/>
+	                </TableRow>
+	            </TableLayout>                
+                
+            </RelativeLayout>		    
+
+            <TextView
+                android:id="@+id/profile_course_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/light_green"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/profile_course_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_course_title"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/profile_post_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_course_container"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/light_green"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/profile_post_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_post_title"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/profile_load_more_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_post_container"
+                android:background="@color/white"
+                android:text="@string/profile_load_more"
+                android:textColor="@color/light_gray"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

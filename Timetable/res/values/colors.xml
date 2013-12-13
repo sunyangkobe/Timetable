@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="default_background_color">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="signin_button_color">#6AA84F</color>
+    <color name="fbconnect_button_color">#165391</color>
+    <color name="home_drawer_background_color">#404040</color>
+    <color name="actionbar_background_color">#EAEAEA</color>
+    <color name="tab_background_color">#FFE5E5E5</color>
+
+    <!-- Home today tab start -->
+    <color name="green">#00af54</color>
+    <color name="red">#ef6578</color>
+    <color name="blue">#4491d5</color>
+    <color name="yellow">#ffd76c</color>
+    <color name="purple">#8d7ec1</color>
+    <color name="light_green">#93c47d</color>
+    <color name="teal">#a2e4e4</color>
+    <color name="orange">#f6bc9c</color>
+    <color name="pink">#dea6e6</color>
+    <color name="red_orange">#cc0000</color>
+
+    <array name="task_lecture_color">
+        <item>@color/yellow</item>
+        <item>@color/blue</item>
+        <item>@color/red</item>        
+        <item>@color/light_green</item>
+        <item>@color/purple</item>
+        <item>@color/teal</item>
+        <item>@color/orange</item>
+        <item>@color/pink</item>
+        <item>@color/green</item>
+    </array>
+    <!-- Home today tab end -->
+
+
+    <!-- Home Course View start -->
+    <color name="dark_green">#39761D</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="more_light_gray">#EEEEEE</color>
+    <!-- Home Course View end -->
+    
+    <!-- Notifications View start -->
+    <color name="dark_red">#CF2A27</color>
+    <!-- Notifications View end -->
+
+</resources>

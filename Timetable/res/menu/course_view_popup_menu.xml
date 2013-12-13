@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+  <group android:id="@+id/groupPopupMenu">
+      <item android:id="@+id/composePostMenuItem"
+          android:title="@string/compose_post_menu_item_text"/>
+      
+      <item android:id="@+id/addTaskMenuItem"
+          android:title="@string/add_task_menu_item_text"/>
+      
+      <item android:id="@+id/addExamMenuItem"
+          android:title="@string/add_exam_menu_item_text"/>
+  </group>
+
+</menu>

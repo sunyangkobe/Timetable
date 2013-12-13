@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/addedit_task_time_fields"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/addedit_task_start_time_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:hint="@string/addedit_task_time_hint"
+        android:inputType="time"
+        android:textAlignment="textEnd"
+        android:textColor="@color/blue"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addedit_task_dash"
+        android:textAlignment="textEnd"
+        android:textColor="@color/blue"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/addedit_task_end_time_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:hint="@string/addedit_task_time_hint"
+        android:inputType="time"
+        android:textAlignment="textEnd"
+        android:textColor="@color/blue"
+        android:textSize="15sp" />
+
+</LinearLayout>

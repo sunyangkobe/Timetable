@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/preference_notification_setting" >
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="requireBackgroundCheck"
+            android:title="@string/preference_background_notification" >
+        </CheckBoxPreference>
+
+        <ListPreference
+            android:defaultValue="60"
+            android:entries="@array/checkFrequency"
+            android:entryValues="@array/checkFrequencyValues"
+            android:key="checkInterval"
+            android:title="@string/preference_check_interval" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="soundEnabled"
+            android:title="@string/preference_sound" >
+        </CheckBoxPreference>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="vibrateEnabled"
+            android:title="@string/preference_vibration" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/preference_about" >
+
+        <Preference
+            android:summary="@string/preference_about_summary"
+            android:title="@string/preference_app_name" />
+
+        <Preference android:layout="@layout/preference_logout_btn" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

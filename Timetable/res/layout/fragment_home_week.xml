@@ -1,0 +1,78 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/homeWeekLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="vertical">
+                   
+        <ProgressBar
+            android:id="@+id/progressIndicator"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/progress_spinner" >
+        </ProgressBar>
+        
+        <LinearLayout
+	        android:id="@+id/mainContent"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:paddingLeft="16dp"
+	        android:paddingRight="16dp"
+	        android:paddingTop="8dp"
+	        android:visibility="gone" >
+	
+	        <LinearLayout
+	            android:id="@+id/dateAndWeekLayout"
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:layout_weight="1"
+	            android:orientation="horizontal"
+	            android:paddingLeft="5dp"
+	            android:paddingTop="10dp" >
+	
+	            <TextView
+	                android:id="@+id/weekCurrentWeekTextView"
+	                android:layout_height="fill_parent"
+	                android:layout_width="0dp"
+	                android:layout_weight="1"
+	                android:gravity="left"
+	                android:textSize="15sp" />
+	
+	            <TextView
+	                android:id="@+id/weekCurrentDateTextView"
+	                android:layout_height="fill_parent"
+	                android:layout_width="0dp"
+	                android:layout_weight="1"
+	                android:gravity="left"
+	                android:textSize="15sp" />
+	        </LinearLayout>
+	
+	        <TextView
+	            android:id="@+id/weekSummaryTextView"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="5dp"
+	            android:layout_marginTop="1dp"
+	            android:gravity="center"
+	            android:textSize="12sp" />
+	
+	        <LinearLayout
+	            android:id="@+id/weekDaySummaryLinearLayout"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	        </LinearLayout>
+	        
+	    </LinearLayout>
+	    
+    </RelativeLayout>
+        
+</ScrollView>

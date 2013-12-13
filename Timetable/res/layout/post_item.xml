@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/postViewRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp" 
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+    
+    <edu.cmu.cs.vlis.timetable.customView.RoundedImageView  
+        android:id="@+id/posterProfileImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+    
+    <TextView 
+        android:id="@+id/posterNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/posterProfileImageView"
+        android:layout_marginLeft="10dp"
+        android:textSize="13sp"
+        android:textStyle="bold"/>
+    
+    <TextView 
+        android:id="@+id/numberOfLIkesAndCommentsTextView"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/light_gray"
+        android:textSize="13sp"/>
+    
+    <TextView 
+        android:id="@+id/postContentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/posterNameTextView"
+        android:layout_below="@id/posterNameTextView"
+        android:layout_marginTop="4dp"
+        android:textSize="13sp"/>
+    
+    <Button
+        android:id="@+id/postLikeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/postContentTextView"
+        android:layout_below="@id/postContentTextView"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="1dp"
+        android:paddingBottom="2dp"
+        android:minHeight="10dp"
+        android:minWidth="10dp"
+        android:text="@string/like_button_text"
+        android:textSize="13sp" 
+        android:background="@drawable/shadow_button_unclick"/>
+    
+    <Button
+        android:id="@+id/postCommentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/postLikeButton"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@id/postLikeButton"
+        android:minHeight="10dp"
+        android:minWidth="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="1dp"
+        android:paddingBottom="2dp"
+        android:text="@string/comment_button_text"
+        android:textSize="13sp" 
+        android:background="@drawable/shadow_button_unclick"/>
+        
+</RelativeLayout>
